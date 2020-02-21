@@ -1,6 +1,8 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+
+    <h3>{{ message }}</h3>
     <p>
       For a guide and recipes on how to configure / customize this project,<br>
       check out the
@@ -37,6 +39,13 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  // 'data' is like React stateL the variabble of your component that change
+  // as you interact with it or load data from API's
+  data() {
+    return {
+      message: 'Hello Vue!'
+    };
   }
 }
 </script>
